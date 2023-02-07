@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.*;
 import java.util.logging.*;
-class Calculator
+abstract class Calculator
 {
     private int a;
     private int b;
@@ -19,10 +19,9 @@ class Calculator
     {
         return b;
     }
-    public int calculate(int a,int b){
-        return a;
-    }
+    abstract public int calculate(int a,int b);
 }
+
 class Addition extends Calculator
 {
     @Override
