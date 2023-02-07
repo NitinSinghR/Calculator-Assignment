@@ -19,7 +19,7 @@ abstract class Calculator
     {
         return b;
     }
-    abstract public int calculate(int a,int b);
+    abstract int calculate(int a,int b);
 }
 
 class Addition extends Calculator
