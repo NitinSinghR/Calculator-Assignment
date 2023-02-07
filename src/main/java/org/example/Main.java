@@ -62,9 +62,12 @@ class CalcTest
         Logger l=Logger.getLogger("com.api.jar");
         Scanner sc=new Scanner(System.in);
 
-        int a,b,ch;
+        int a;
+        int b;
+        int ch;
         Calculator c = null;
-
+        String v1="Enter first number\n";
+        String v2="Enter second number\n";
         while(true)
         {
             l.info("\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\nEnter your choice\n");
@@ -72,36 +75,36 @@ class CalcTest
             switch(ch) {
                 case 1: {
                     c = new Addition();
-                    l.info("Enter first number\n");
+                    l.info(v1);
                     a=sc.nextInt();
-                    l.info("Enter second number\n");
+                    l.info(v2);
                     b=sc.nextInt();
                     c.set(a,b);
                     break;
                 }
                 case 2:{
                     c =  new Subtraction();
-                    l.info("Enter first number\n");
+                    l.info(v1);
                     a=sc.nextInt();
-                    l.info("Enter second number\n");
+                    l.info(v2);
                     b=sc.nextInt();
                     c.set(a,b);
                     break;
                 }
                 case 3: {
                     c = new Multiplication();
-                    l.info("Enter first number\n");
+                    l.info(v1);
                     a=sc.nextInt();
-                    l.info("Enter second number\n");
+                    l.info(v2);
                     b=sc.nextInt();
                     c.set(a,b);
                     break;
                 }
                 case 4:{
                     c = new Division();
-                    l.info("Enter first number\n");
+                    l.info(v1);
                     a=sc.nextInt();
-                    l.info("Enter second number\n");
+                    l.info(v2);
                     b=sc.nextInt();
                     c.set(a,b);
                     break;
