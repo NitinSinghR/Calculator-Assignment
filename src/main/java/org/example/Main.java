@@ -20,8 +20,7 @@ class Calculator
         return b;
     }
     public int calculate(int a,int b){
-        int n=0;
-        return n;
+        return a;
     }
 }
 class Addition extends Calculator
